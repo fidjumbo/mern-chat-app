@@ -16,7 +16,7 @@ const MessageContainer = ({ isMobileView }) => {
   const handleBack = () => setSelectedConversation(null);
 
   return (
-    <div className="md:min-w-[450px] flex flex-col h-full relative">
+    <div className="flex flex-col h-full relative w-[350px] md:min-w-[450px] p-3 md:px-0">
       {!selectedConversation ? (
         <NoChatSelected />
       ) : (
@@ -25,14 +25,14 @@ const MessageContainer = ({ isMobileView }) => {
           {isMobileView && (
             <button
               onClick={handleBack}
-              className="absolute top-1 left-2 z-10 bg-gray-700 text-white px-3 py-1 rounded-md"
+              className="absolute top-4 left-4 z-10 bg-gray-700 text-white px-3 py-1 rounded-md"
             >
               Back
             </button>
           )}
 
           {/* header */}
-          <div className="bg-slate-500 flex gap-1 justify-end py-2 pr-2 mb-2">
+          <div className="bg-slate-500 left-0 w-full top-3 flex gap-1 justify-end py-2 pr-2 mb-2">
             <span className="label-text">To:</span>{" "}
             <span className="text-gray-900 font-bold">{selectedConversation.fullName}</span>
           </div>
