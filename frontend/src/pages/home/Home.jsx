@@ -16,7 +16,7 @@ const Home = () => {
 
   return (
     <div
-      className='flex sm:h-[450px] md:h-[550px] h-[85vh] mx-auto rounded-lg overflow-hidden 
+      className='flex sm:h-[450px] md:h-[550px] h-[85vh] mb-5 mx-auto rounded-lg overflow-hidden 
       bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0'
     >
       {/* Sidebar — show always on desktop, only when no chat selected on mobile */}
